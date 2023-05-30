@@ -1,5 +1,6 @@
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
+
 async function saveItem(listItem, id) {
   listItem.id = id ? id : new Date().getTime()
   const savedItems = await getItems();

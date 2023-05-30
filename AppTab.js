@@ -5,6 +5,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
 import AppList from './AppList';
 import AppForm from './AppForm';
+import Database from './Database';
 
 const { Navigator, Screen } = createBottomTabNavigator();
 
