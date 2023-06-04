@@ -2,7 +2,10 @@ import { StatusBar } from 'expo-status-bar';
 import React, { useState, useEffect } from 'react';
 import { StyleSheet, Text, View, TextInput, TouchableOpacity } from 'react-native';
 import { Feather as Icon } from '@expo/vector-icons';
+import { FontAwesome5 } from '@expo/vector-icons';
 import Database from './Database';
+
+
 
 export default function AppForm({ route, navigation }) {
   const id = route.params ? route.params.id : undefined;
@@ -27,6 +30,8 @@ export default function AppForm({ route, navigation }) {
 
   return (
     <View style={styles.container}>
+      <Text style={styles.titulo}>CheckList</Text>
+      <FontAwesome5 style={styles.icone} name="shopping-cart" size={50} color="black" />
       <Text style={styles.title}>Item para comprar</Text>
       <View style={styles.inputContainer}>
         <TextInput
@@ -57,7 +62,7 @@ export default function AppForm({ route, navigation }) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#D93600',
+    backgroundColor: '#4682B4',
     alignItems: 'center',
   },
   title: {
@@ -65,6 +70,7 @@ const styles = StyleSheet.create({
     fontSize: 20,
     fontWeight: 'bold',
     marginTop: 50,
+    
   },
   inputContainer: {
     flex: 1,
@@ -74,7 +80,8 @@ const styles = StyleSheet.create({
     borderTopLeftRadius: 10,
     borderTopRightRadius: 10,
     alignItems: 'stretch',
-    backgroundColor: '#fff'
+    backgroundColor: '#fff',
+    
   },
   input: {
     marginTop: 10,
@@ -106,5 +113,17 @@ const styles = StyleSheet.create({
     fontSize: 18,
     color: '#fff',
     fontWeight: 'bold',
-  }
+  },
+  icone: {
+    alignItems: 'center',
+    paddingBottom: 18,
+},
+titulo:{
+  color: '#fff',
+fontSize: 30,
+fontWeight: 'bold',
+marginTop: 50,
+
+}
+
 });
