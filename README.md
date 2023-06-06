@@ -20,7 +20,13 @@ O aplicativo permitira  a listagem de itens, possibilitando assim mais eficencia
 
 # 📁 Acesso ao projeto
 
-**github**``
+**github**
+como Executar :
+git clone https://github.com/Moura20/Checklist
+npm i ou yarn install
+cd AwesomeProject
+npm start ou yarn start 
+scan the QRCode em seu telefone
 
 #tecnologias utilizadas
 - React Native
@@ -28,3 +34,4 @@ O aplicativo permitira  a listagem de itens, possibilitando assim mais eficencia
 # Autores
 - Jordão Moura
 - Kauã Vicente
+- Edilson Lins
